@@ -15,8 +15,12 @@ console.log(ticket_Amount);
 
 // Discount
 
-let discount_under18 =(ticket_Amount * 0.2).toFixed(2);
-let discount_over65 = (ticket_Amount * 0.5).toFixed(2);
+let ticket_under18 =(ticket_Amount * 0.8).toFixed(2);
+let ticket_over65 = (ticket_Amount * 0.6).toFixed(2);
+
+console.log(ticket_over65);
+console.log(ticket_under18);
 
 // total amount with eventual discount
+
 
