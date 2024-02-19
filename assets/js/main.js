@@ -23,15 +23,29 @@ let over65_discount = (ticket_amount / 100) * 40;
 
 // total amount with eventual discount
 
+// if (user_age < 18){
+//     const amount_under18 = (ticket_amount - under18_discount).toFixed(2);
+//     alert(`L'importo totale è di € ${amount_under18}`);
+// } else if (user_age >= 65) {
+//     const amount_over65 = (ticket_amount - over65_discount).toFixed(2);
+//     alert(`L'importo totale è di € ${amount_over65}`);
+// } else {
+//    alert(`L'importo totale è di € ${ticket_amount}`); 
+// }
+
+// Print resul regardless of the case
+
+
+let amount_tot ;
+
 if (user_age < 18){
-    const amount_under18 = (ticket_amount - under18_discount).toFixed(2);
-    alert(`L'importo totale è di € ${amount_under18}`);
+    amount_tot = (ticket_amount - under18_discount).toFixed(2);
 } else if (user_age >= 65) {
-    const amount_over65 = (ticket_amount - over65_discount).toFixed(2);
-    alert(`L'importo totale è di € ${amount_over65}`);
+    amount_tot = (ticket_amount - over65_discount).toFixed(2);
 } else {
-   alert(`L'importo totale è di € ${ticket_amount}`); 
+     amount_tot = ticket_amount
 }
 
-// Visualize the result
+alert(`L'importo totale è di € ${amount_tot}`)
 
+document.writeln(`PROMEMORIA: Importo totale € ${amount_tot}`)
