@@ -21,7 +21,8 @@ console.log(ticket_amount);
 let under18_discount = (ticket_amount / 100) * 20;
 let over65_discount = (ticket_amount / 100) * 40;
 
-// total amount with eventual discount
+//OPTION 1)
+//Total amount with eventual discount
 
 // if (user_age < 18){
 //     const amount_under18 = (ticket_amount - under18_discount).toFixed(2);
@@ -33,8 +34,8 @@ let over65_discount = (ticket_amount / 100) * 40;
 //    alert(`L'importo totale è di € ${ticket_amount}`); 
 // }
 
+//OPTION 2)
 // Print resul regardless of the case
-
 
 let amount_tot ;
 
