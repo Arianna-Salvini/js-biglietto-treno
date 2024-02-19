@@ -13,5 +13,10 @@ let ticket_Amount = Math.floor(total_km * cost_per_km);
 
 console.log(ticket_Amount);
 
+// Discount
 
+const discount_under18 = Math.floor(ticket_Amount * 0.2);
+const discount_over65 = Math.floor(ticket_Amount * 0.5);
+
+// total amount with eventual discount
 
