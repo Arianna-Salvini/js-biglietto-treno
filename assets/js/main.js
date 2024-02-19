@@ -15,11 +15,14 @@ console.log(ticket_amount);
 
 // Discount (amount/100 * discount = amount discounted)
 
-let under18_discount = 80 / 100;
-let over65_discount = 60 / 100;
+// let under18_discount = 80 / 100;
+// let over65_discount = 60 / 100;
 
-const amount_under18 = (ticket_amount * under18_discount).toFixed(2);
-const amount_over65 = (ticket_amount * over65_discount).toFixed(2);
+let under18_discount = (ticket_amount / 100) * 20;
+let over65_discount = (ticket_amount / 100) * 40;
+
+const amount_under18 = (ticket_amount - under18_discount).toFixed(2);
+const amount_over65 = (ticket_amount - over65_discount).toFixed(2);
 
 console.log(amount_under18);
 console.log(amount_over65);
@@ -27,10 +30,10 @@ console.log(amount_over65);
 // total amount with eventual discount
 
 if (user_age < 18){
-    console.log(`L'importo totale è ${amount_under18}`);
+    console.log(`L'importo totale è di € ${amount_under18}`);
 } else if (user_age >= 65) {
-    console.log(`L'importo totale è ${amount_over65}`);
+    console.log(`L'importo totale è di € ${amount_over65}`);
 } else {
-   console.log(`L'importo totale è ${ticket_amount}`); 
+   console.log(`L'importo totale è di € ${ticket_amount}`); 
 }
 
