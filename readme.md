@@ -29,7 +29,8 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 
 - variabili
 - prompt
-- math
-- round
+<!-- 
+- math          NOT NECESSARY
+- round -->
 - .toFixed(2)   ---> per avere solo 2 decimali
 - if
