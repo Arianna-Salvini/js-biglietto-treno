@@ -17,14 +17,13 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 
 - Step2: Calcolare prezzo biglietto
     - calcolare in base ai kilometri
-    - applicare sconti
+    - calcolare sconti
         -SE meno di 18 20%
         -SE sopra i 65 40%
 
 - Step3: Dare prezzo finale in forma umana
 
     - Arrotondare a 2 decimali
-
 
 <!-- STRUMENTI -->
 
