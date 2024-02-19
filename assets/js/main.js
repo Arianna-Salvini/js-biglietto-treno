@@ -9,18 +9,25 @@ console.log(user_age);
 // Calculate the cost of tickets based on the amount of kilometres
 
 const cost_per_km = 0.21;
-let ticket_Amount =(total_km * cost_per_km).toFixed(2);
+let ticket_amount =(total_km * cost_per_km).toFixed(2);
 
-console.log(ticket_Amount);
+console.log(ticket_amount);
 
-// Discount
+// Discount (amount/100 * discount = amount discounted)
 
-let ticket_under18 =(ticket_Amount * 0.8).toFixed(2);
-let ticket_over65 = (ticket_Amount * 0.6).toFixed(2);
+let amount_under18 =(ticket_amount * 0.8).toFixed(2);
+let amount_over65 = (ticket_amount * 0.6).toFixed(2);
 
-console.log(ticket_over65);
-console.log(ticket_under18);
+console.log(amount_under18);
+console.log(amount_over65);
 
 // total amount with eventual discount
 
+if (user_age < 18){
+    console.log(`L'importo totale è ${amount_under18}`);
+} else if (user_age >= 65) {
+    console.log(`L'importo totale è ${amount_over65}`);
+} else {
+   console.log(`L'importo totale è ${ticket_amount}`); 
+}
 
